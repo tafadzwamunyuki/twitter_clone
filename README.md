@@ -1,0 +1,3 @@
+- created using nextjs
+- install tailwindcss
+- configure tailwind
