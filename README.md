@@ -1,3 +1,4 @@
 - created using nextjs
 - install tailwindcss
 - configure tailwind
+- install reacticons
