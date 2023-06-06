@@ -1,6 +1,7 @@
 // import React from 'react'
 
 import { HiSparkles } from "react-icons/Hi";
+import Input from "./Input";
 
 export default function Feed() {
   return (
@@ -11,6 +12,7 @@ export default function Feed() {
             <HiSparkles className="h-5" />
         </div>
       </div>
+      <Input />
     </div>
   )
 }
