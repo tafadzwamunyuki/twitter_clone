@@ -1,11 +1,19 @@
-// import React from 'react'
-
 import { HiOutlineEmojiHappy, HiOutlinePhotograph } from "react-icons/Hi";
+import { useSession, signOut } from "next-auth/react";
 
 export default function Input() {
+  const {data: session} = useSession()
+  console.log(session)
   return (
-    <div className="flex border b border-gray-200 p-3 space-x-3">
-      <img src="https://avatars.githubusercontent.com/u/35223331?v=4" width="50" height="50" roundedSize="13" 
+    <>
+      {session && (
+      <div className="flex border b border-gray-200 p-3 space-x-3">
+      <img 
+      onClick={signOut}
+      src={session.user.image} 
+      width="50" 
+      height="50" 
+      roundedSize="13" 
       alt=""
       className="h-11 w-11 rounded-full cursror-pointer hover:brightness-95"
         />
@@ -22,5 +30,7 @@ export default function Input() {
         </div>
     </div>
     </div>
+    )}
+    </>   
   )
 }
