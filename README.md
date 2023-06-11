@@ -2,3 +2,6 @@
 - install tailwindcss
 - configure tailwind
 - install reacticons
+- install next-auth for user authentication
+- uses firebase db
+- install firebase
